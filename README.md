@@ -1,4 +1,4 @@
-# cse-122-fall-2022-intake-50
+# cse-122-Spring 2023-intake-50
 This is an OOP lab repository
 
 
