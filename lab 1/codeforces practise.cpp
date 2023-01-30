@@ -1,29 +1,20 @@
-
 #include<iostream>
 #include<string>
 using namespace std;
 int main()
- {
-     string a;
-     string b;
-     int i,n;
-     cin >> a >> b;
-     n=a.size();
-     for(i=0; i<n; i++){
-        a[i] = tolower(a[i]);
-        b[i] = tolower(b[i]);
-     }
-     if(a==b)
-        cout << "0" << endl;
-     else{
-        for(i=0;i<n;i++){
-            if(a[i]<b[i]){
-                cout << "-1" << endl;
-                break;
+{
+    string s;
+    cin>>s;
+    int i,j,n=s.size();
+    for(i=0; i<n; i+=2)
+    {
+        for(j=0; j<n-1; j+=2)
+        {
+            if(s[j]>s[j+2])
+            {
+                swap(s[j],s[j+2]);
             }
-            else if(a[i]>b[i]){
-                cout << "1" << endl;
-                break;
-            }}}
-     return 0;
+        }
+    }
+    cout<<s;
 }
