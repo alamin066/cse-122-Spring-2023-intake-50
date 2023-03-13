@@ -9,5 +9,8 @@ int main()
     {
        t=t+i*k;
     }
+    if(t>n)
     cout<<t-n;
+    else
+        cout<<"0";
 }
